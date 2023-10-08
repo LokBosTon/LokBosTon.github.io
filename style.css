@@ -1,30 +1,169 @@
-.pause{
+.settings{
   position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 100;
-  cursor: pointer;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  text-shadow: 0 0 10px #000;
+  bottom: 20px;
+  left: 20px;
 }
 
-.resume{
+.stext1{
   position: absolute;
-  top: 10px;
-  left: 200px;
-  z-index: 100;
-  cursor: pointer;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  text-shadow: 0 0 10px #000;
+  bottom: 3px;
+  left: 65px;
+  color: white
+}
+.stext2{
+  position: absolute;
+  bottom: 1px;
+  left: 65px;
+  color: white
+}
+.stext3{
+  position: absolute;
+  bottom: 150px;
+  left: 65px;
+  color: white
 }
 
-.slider{
-position: absolute;
-top: 10px;
-left: 500px;
-width: auto;
+.list1{
+  list-style-type: none;
+  position: absolute;
+  bottom: 80px;
+  left: 60px;
+  background-color: transparent;
+  border: 2px solid #333
+}
+
+.listitem{
+  margin-top: auto;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+.hidden{
+  display: none;
+}
+
+.wrapper{
+  position: fixed;
+  max-width: 70%;
+  top: 40px; /* Adjust the top margin as needed */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  max-height: 70px;
+
+  display: flex;
+  overflow-x: auto;
+}
+
+.wrapper::-webkit-scrollbar{
+  width: 0;
+}
+
+.wrapper .item{
+  display: flex; /* Use Flexbox layout */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  min-width: 120px;
+  min-height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 25px;
+  color: #deecf7;
+  border: 2px solid #deecf7;
+  border-color: #deecf7;
+}
+
+.graphicdatadiv{
+  position: absolute;
+  top: 200;
+  right: 50;
+  width: 450;
+}
+
+.textdata{
+  /* center text data in middle but still to left */
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 200;
+  left: 50;
+  color: #deecf7;
 }

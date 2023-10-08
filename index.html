@@ -1,12 +1,30 @@
 <head>
   <style> body { margin: 0; } </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <script type="module" src="/main.js"></script>
-  <div id="globeViz"> 
-  </div>
-  <button id="pause" class="pause">Pause</button>
-  <button id="resume" class="resume">Resume</button>
-  <input type="range" id="slider" min="1" max="20" value="2" class="slider">
+  <div id="globeViz"> </div>
+    <l class="list1 hidden">
+      <li><img src="/play.png" alt="resume" class="listitem" id="resume">
+      <img src="/pause.png" alt="pause" class="listitem" id="pause"><text class="stext3">Adjust the rotation speed</text></li> 
+      <li><input type="range" id="slider" min="2" max="20" value="1" class="listitem"></li>
+      <li><label class="switch">
+        <input type="checkbox" id="checkbox1">
+        <span class="slider round"></span>
+        <text class="stext1"> Show Probes</text>
+      </label></li>
+      <li><label class="switch">
+        <input type="checkbox" id="checkbox2">
+        <span class="slider round"></span>
+        <text class="stext2"> Show Graphs</text>
+      </label></li>
+    </l>
+    <div class="wrapper" id="scrollbar">
+    </div>
+  <img src="/settings.png" alt="settings" class="settings" id="settings">
+
 </body>
