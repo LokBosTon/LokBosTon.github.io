@@ -1,0 +1,30 @@
+.pause{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #000;
+}
+
+.resume{
+  position: absolute;
+  top: 10px;
+  left: 200px;
+  z-index: 100;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #000;
+}
+
+.slider{
+position: absolute;
+top: 10px;
+left: 500px;
+width: auto;
+}
