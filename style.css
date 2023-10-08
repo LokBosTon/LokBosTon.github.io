@@ -8,19 +8,23 @@
   position: absolute;
   bottom: 3px;
   left: 65px;
-  color: white
+  color: white;
+  font-size: 12px;
+  
 }
 .stext2{
   position: absolute;
   bottom: 1px;
   left: 65px;
-  color: white
+  color: white;
+  font-size: 12px
 }
 .stext3{
   position: absolute;
-  bottom: 150px;
+  bottom: 108px;
   left: 65px;
-  color: white
+  color: white;
+  font-size: 12px;
 }
 
 .list1{
@@ -29,7 +33,7 @@
   bottom: 80px;
   left: 60px;
   background-color: transparent;
-  border: 2px solid #333
+  border: 2px solid #333;
 }
 
 .listitem{
