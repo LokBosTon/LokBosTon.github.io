@@ -2,10 +2,10 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
-}
+  }
 
-.stext1{
-  position: absolute;
+  .stext1{
+    position: absolute;
   bottom: 3px;
   left: 65px;
   color: white;
