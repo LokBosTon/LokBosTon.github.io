@@ -130,7 +130,7 @@ myCheckbox.addEventListener('change', function() {
   } else {
     myGlobe = Globe();
     myGlobe(document.getElementById('globeViz'))
-    .globeImageUrl('/moon_night.jpg')
+    .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
     .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png');
   }
 });
