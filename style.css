@@ -171,3 +171,11 @@ div.scrollmenu a:hover {
   left: 50;
   color: #deecf7;
 }
+
+.info{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #deecf7;
+  font-size: 12px;
+}

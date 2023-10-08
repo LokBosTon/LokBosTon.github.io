@@ -43,7 +43,7 @@ var shallowquakes = [{"Year":1971,"Day":107,"Hour":7,"Min":0,"Sec":55,"Lat":48.0
 
 let myGlobe = Globe();
 myGlobe(document.getElementById('globeViz'))
-  .globeImageUrl('/moon_night.jpg')
+  .globeImageUrl('./moon_night.jpg')
   .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png');
 
 myGlobe.controls().autoRotate = true;
@@ -205,7 +205,8 @@ function scrolleventlistener(index){
   <h2>Sec: ${shallowquakes[index]['Sec']}</h2>
   <h2>Lat: ${shallowquakes[index]['Lat']}</h2>
   <h2>Long: ${shallowquakes[index]['Long']}</h2>
-  <h2>Magnitude: ${shallowquakes[index]['Magnitude']}</h2>`;
+  <h2>Magnitude: ${shallowquakes[index]['Magnitude']}</h2>
+  <a href="https://toghrul.itch.io/moonquake"><h2>SIMULATE</h2></a>`;
   if (shallowquakes[index]['Comments'] != null){
     text.innerHTML += `<text>Comments: ${shallowquakes[index]['Comments']}</h2>`;
   }
