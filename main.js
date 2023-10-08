@@ -43,7 +43,7 @@ var shallowquakes = [{"Year":1971,"Day":107,"Hour":7,"Min":0,"Sec":55,"Lat":48.0
 
 let myGlobe = Globe();
 myGlobe(document.getElementById('globeViz'))
-  .globeImageUrl('./public/moon_night.jpg')
+  .globeImageUrl('//svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/lroc_color_poles_1k.jpg')
   .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png');
 
 myGlobe.controls().autoRotate = true;
@@ -130,7 +130,7 @@ myCheckbox.addEventListener('change', function() {
   } else {
     myGlobe = Globe();
     myGlobe(document.getElementById('globeViz'))
-    .globeImageUrl('./public/moon_night.jpg')
+    .globeImageUrl('//svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/lroc_color_poles_1k.jpg')
     .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png');
   }
 });
