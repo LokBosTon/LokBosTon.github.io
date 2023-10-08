@@ -43,7 +43,7 @@ var shallowquakes = [{"Year":1971,"Day":107,"Hour":7,"Min":0,"Sec":55,"Lat":48.0
 
 let myGlobe = Globe();
 myGlobe(document.getElementById('globeViz'))
-  .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
+  .globeImageUrl('//github.com/fireship-io/threejs-scroll-animation-demo/blob/main/moon.jpg')
   .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png');
 
 myGlobe.controls().autoRotate = true;
