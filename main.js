@@ -1,4 +1,4 @@
-import './style.css'
+import 'style.css'
 import Globe from 'globe.gl'
 
 var artificalquakes = [{"Apollo":'red',"Lat":-3.94,"Long":-21.2,"Year":69,"Day":324,"Hour":22,"Min":17,"Sec":17.7,"link":"https://www.nasa.gov/mission/apollo-12/"},
@@ -43,7 +43,7 @@ var shallowquakes = [{"Year":1971,"Day":107,"Hour":7,"Min":0,"Sec":55,"Lat":48.0
 
 let myGlobe = Globe();
 myGlobe(document.getElementById('globeViz'))
-  .globeImageUrl('//github.com/fireship-io/threejs-scroll-animation-demo/blob/main/moon.jpg')
+  .globeImageUrl('moon_night.jpg')
   .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png');
 
 myGlobe.controls().autoRotate = true;
